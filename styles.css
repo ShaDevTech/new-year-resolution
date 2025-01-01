@@ -1,0 +1,110 @@
+/* Global styles for the body */
+body {
+    background-color: hsl(230, 40%, 96%); /* Light pastel blue for a calming background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Ensure items are stacked vertically */
+    height: 100vh; /* Full height to center content vertically */
+    font-family: 'Arial', sans-serif; /* Clean and legible font for the whole page */
+    padding: 20px; /* Add padding to prevent content from touching edges */
+}
+
+/* Title (h1) styling */
+.title {
+    margin-bottom: 1.5em; /* Space below the title */
+    font-size: 2.5em; /* Large and prominent */
+    color: hsl(45, 85%, 50%); /* Vibrant yellow-gold for an optimistic and celebratory feel */
+    font-family: 'Georgia', serif; /* Elegant font for emphasis */
+    text-shadow: 1px 1px 4px hsl(0, 0%, 50%); /* Subtle shadow to make the title stand out */
+}
+
+/* Shared label styling for name inputs */
+.nameLabel {
+    margin-bottom: 0.5em; /* Space between label and input */
+    color: hsl(200, 50%, 20%); /* Muted dark blue for good readability */
+    font-size: 1.2em; /* Slightly larger text for labels */
+    font-family: 'Courier New', monospace; /* Adds a casual handwritten vibe */
+}
+
+/* Input field styling */
+.inputField {
+    width: 100%; /* Full width for responsiveness */
+    max-width: 400px; /* Restrict the width for better aesthetics */
+    padding: 12px; /* Comfortable padding */
+    border: 2px solid hsl(200, 50%, 80%); /* Subtle border for definition */
+    border-radius: 25px; /* Smooth, rounded appearance */
+    font-size: 1em; /* Readable text size */
+    color: hsl(200, 50%, 20%); /* Match label color for uniformity */
+    background-color: hsl(0, 0%, 98%); /* Slight off-white for input background */
+    margin-bottom: 1em; /* Space between inputs */
+}
+
+/* Add margin between the resolution message and the button */
+.results {
+    display: block; /* Ensure results are block elements */
+    text-align: center; /* Center align text */
+    padding: 2px; /* Add padding to make results container visible */
+    width: 100%;
+    max-width: 500px;
+    margin-top: 20px; /* Add space above the result section */
+    background-color: #fff; /* Background to make sure the content is visible */
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+.results h4 {
+    font-size: 2em;        /* Makes the greeting larger */
+    font-weight: bold;     /* Makes the text bold */
+    margin-bottom: 15px;   /* Adds space below the greeting */
+}
+
+.results p {
+    font-size: 1.5em;      /* Adjust the size for better readability */
+    margin-bottom: 30px;   /* Adds space between resolution and the button */
+}
+
+/* Button styling */
+button {
+    margin-top: 20px;      /* Adds space above the button */
+    padding: 0.8em 2em;    /* Balanced padding for size and spacing */
+    background-color: hsl(140, 70%, 45%); /* Vibrant green for positivity */
+    color: hsl(0, 0%, 100%); /* White text for contrast */
+    font-size: 1.1em;      /* Slightly larger text for visibility */
+    border: none;          /* No border for a clean look */
+    border-radius: 12px;   /* Rounded corners for a modern feel */
+    cursor: pointer;       /* Pointer cursor to indicate interactivity */
+    transition: background-color 0.3s ease-in-out; /* Smooth color transition on hover */
+}
+
+/* Button hover effect */
+button:hover {
+    background-color: hsl(140, 80%, 35%); /* Darker green for hover feedback */
+}
+
+/* Styling for the user input container */
+.userInputs {
+    background-color: hsl(0, 0%, 100%); /* Pure white for contrast against the background */
+    padding: 2em; /* Generous padding for spacing */
+    border-radius: 15px; /* Rounded corners for softness */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Subtle shadow for a lifted appearance */
+    text-align: center; /* Center-align all text inside the container */
+    max-width: 500px;    /* Restrict width for better layout */
+    width: 90%;          /* Ensure it looks good on smaller screens */
+}
+
+#fireworkCanvas {
+    position: fixed;
+    top:0;
+    left:0;
+    width: 100%; /*fireworks canvas covers the whole screen */
+    height:100%; /*fireworks canvas covers the whole screen */
+    pointer-events: none ;/* Prevent interaction with the canvas*/ 
+}
+
+/* Reduce its size on mobile screens */
+@media (max-width: 600px) {
+    #fireworkCanvas {
+        height: 50%; /* For example, adjust height for smaller screens */
+    }
+}
